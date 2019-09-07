@@ -6,6 +6,7 @@ ZONE=$(jq --raw-output ".zone" $CONFIG_PATH)
 HOST=$(jq --raw-output ".host" $CONFIG_PATH)
 EMAIL=$(jq --raw-output ".email" $CONFIG_PATH)
 API=$(jq --raw-output ".api" $CONFIG_PATH)
+PROXY=$(jq --raw-output ".proxy" $CONFIG_PATH)
 
 # Enforces required env variables
 required_vars=(ZONE HOST EMAIL API)
