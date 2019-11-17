@@ -45,7 +45,7 @@ else
 fi
 
 # Determines the current IP address
-new_ip=$($ip_curl https://davidramosweb.com/miip.php)
+new_ip=$($ip_curl https://api.ipify.org)
 
 # IP address service fallbacks
 if [[ -z $new_ip ]]; then
